@@ -71,7 +71,7 @@ namespace LogToDb.DataTools
 
             foreach(var existingObj in inputObjects)
             {
-                log.Info("Oprhaned (incomplete) log entries that were not exported to the database:");
+                log.Info("Oprhaned (incomplete) log entry that was not exported to the database:");
                 log.Info(existingObj.id);
             }
 
