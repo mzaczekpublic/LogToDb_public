@@ -9,7 +9,7 @@ File input is realized with a filestream. Data is loaded and processed line by l
 Code is structured to follow Object Oriented programming principle. 
 
 USAGE
-To run the program execute LogToDb.exe <path_to_input_json_file>
+To run the program, execute LogToDb.exe <path_to_input_json_file>
 
 For instance:
 C:\Temp\LogToDB.exe C:\Temp\input.json
