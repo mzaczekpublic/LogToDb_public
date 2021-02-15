@@ -23,7 +23,10 @@ namespace LogToDb
             // REGION: DATA INPUT AND DESERIALIZATION
             List<EventObject> eventObjects = ImportData.FromFile(inputFilepath);
             if (eventObjects is null)
+            {
+                log.Info("Nothing was imported. Check the input data");
                 return;
+            }
 
             // REGION: DATA OUTPUT
             ExportData.ToDatabase(eventObjects, dbFilepath);
